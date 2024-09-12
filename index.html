@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Editor</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>My image editor</h1>
+    </header>
+    <main class="main__content">
+      <section class="container disable">
+        <h2>Easy Image Editor</h2>
+        <div class="wrapper">
+          <div class="editor__panel">
+            <div class="filter">
+              <h3 class="title">Filters</h3>
+              <div class="options">
+                <button id="brightness" class="active">Brightness</button>
+                <button id="saturation">Saturation</button>
+                <button id="inversion">Inversion</button>
+                <button id="grayscale">Grayscale</button>
+              </div>
+              <div class="slider">
+                <div class="filter__info">
+                  <p class="name">Brighteness</p>
+                  <p class="value">100%</p>
+                </div>
+                <input type="range" value="100" min="0" max="200" />
+              </div>
+            </div>
+            <div class="rotate">
+              <h3 class="title">Rotate & Flip</h3>
+              <div class="options">
+                <button id="left">
+                  <i class="fa-solid fa-rotate-left"></i>
+                </button>
+                <button id="right">
+                  <i class="fa-solid fa-rotate-right"></i>
+                </button>
+                <button id="horizontal">
+                  <i class="bx bx-reflect-vertical"></i>
+                </button>
+                <button id="vertical">
+                  <i class="bx bx-reflect-horizontal"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="preview__img">
+            <img src="img/image-placeholder.svg" alt="preview__img" />
+          </div>
+        </div>
+        <div class="controls">
+          <button class="reset__filter">Reset Filters</button>
+          <div class="row">
+            <input type="file" class="file__input" accept="image/*" hidden />
+            <button class="choose__img">Choose Image</button>
+            <button class="save__img">Save Image</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <span>My image editor 2024. All rights reserved.</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
