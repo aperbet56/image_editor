@@ -219,3 +219,34 @@ h1 {
 footer span {
     font-size: 20px;
 }
+
+/**** Responsive design ****/
+
+@media screen and (max-width: 760px) {
+    .container {
+      padding: 25px;
+    }
+    .container .wrapper {
+      flex-wrap: wrap-reverse;
+    }
+    .wrapper .editor__panel {
+      width: 100%;
+    }
+    .wrapper .preview__img {
+      width: 100%;
+      margin: 0 0 15px;
+    }
+}
+  
+@media screen and (max-width: 500px) {
+    .controls button {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    .controls .row {
+      width: 100%;
+    }
+    .controls .row .save__img {
+      margin-left: 0;
+    }
+}
