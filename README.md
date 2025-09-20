@@ -4,11 +4,11 @@
 
 Création d'un simple programme permettant à un utilisateur de télécharger, modifier via des filtres, faire des rotations et enregistrer une image !
 
-## Démonstrattion
+## Démonstration
 
 Lien vers le projet : https://aperbet56.github.io/image_editor/
 
-## Développez avec
+## Projet développé avec
 
 - Utilisation des balises sémantiques HTML5
 - CSS3
